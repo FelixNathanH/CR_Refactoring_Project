@@ -77,7 +77,7 @@ public class Printer {
         int[] qtyToys = player.getQtyToys();
         int index = 0;
         for (Toy toy : toyList) {
-            System.out.format("| %15s | %7d   | %10d   |\n", toy.name, toy.price, qtyToys[index]);
+            System.out.format("| %15s | %7d   | %10d   |\n", toy.getName(), toy.getPrice(), qtyToys[index]);
             index++;
         }
         System.out.println("==============================================");
