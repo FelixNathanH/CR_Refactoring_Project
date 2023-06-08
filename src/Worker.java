@@ -1,7 +1,7 @@
 public class Worker {
-    int id;
-    String name;
-    int upgradePrice;
+    private int id;
+    private String name;
+    private int upgradePrice;
 
     Worker(int id, String name, int price) {
         this.id = id;

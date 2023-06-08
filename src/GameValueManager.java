@@ -48,14 +48,14 @@ public class GameValueManager {
                     selectUpgrade = sc.nextInt();
                     Worker worker = workerList.get(selectUpgrade - 1);
 
-                    if (player.money >= worker.upgradePrice) {
+                    if (player.money >= worker.getUpgradePrice()) {
                         int[] qtyWorker = player.getQtyWorker();
                         if (qtyWorker[selectUpgrade - 1] == 0)
                             System.out.println("You dont have any worker with that level");
                         else {
                             player.decreaseWorkerAmount(selectUpgrade);
                             player.increaseWorkerAmount(selectUpgrade + 1);
-                            player.decreasePlayerMoney(worker.upgradePrice);
+                            player.decreasePlayerMoney(worker.getUpgradePrice());
                         }
                     } else {
                         System.out.println("You dont have enough money");
