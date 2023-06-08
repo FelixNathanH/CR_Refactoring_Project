@@ -108,8 +108,8 @@ public class Utility {
 
     public static String ToySearch(int toy, ArrayList<Toy> toyList) {
         for (Toy item : toyList) {
-            if (toy == item.id) {
-                return item.name;
+            if (toy == item.getId()) {
+                return item.getName();
             }
         }
         return "Invalid Toy";

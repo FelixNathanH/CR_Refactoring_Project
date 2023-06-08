@@ -1,6 +1,6 @@
 public class Toy {
-     int id, price;
-     String name;
+     private int id, price;
+     private String name;
 
     public Toy(int id, String name, int price) {
         this.id = id;

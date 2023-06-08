@@ -102,7 +102,7 @@ public class GameValueManager {
             orderComplete = true;
 
         if (orderComplete) {
-            int money = player.qty * toyGet.price * (100 + (player.level - 1) * 10) / 100;
+            int money = player.qty * toyGet.getPrice() * (100 + (player.level - 1) * 10) / 100;
             player.increasePlayerMoney(money);
             player.increaseOrderDone();
             player.setNewToyQty(player.toy, player.qty);
